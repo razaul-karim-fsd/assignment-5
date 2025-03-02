@@ -52,7 +52,7 @@ for (let i = 0; i < datas.length; i++) {
             const now = new Date();
             const timeString = now.toLocaleTimeString(); 
             const newElem = document.createElement("p");
-            newElem.className = "text-xl font-semibold block bg-[#F4F7FF] shadow-2xl mb-3 rounded-lg p-4";
+            newElem.className = "text-xl font-normal block bg-[#F4F7FF] shadow-2xl mb-3 rounded-lg p-4";
             newElem.innerText = `You have Completed The Task  ${fasdataText} at ${timeString}`;
 
             task.appendChild(newElem);
