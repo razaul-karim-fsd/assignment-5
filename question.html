@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <!-- Tailwind CSS CDN Link -->
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+   <!-- Custom Class -->
+   <style>
+      .poppins {
+         font-family: 'poppins', sans-serif;
+         }
+   </style>
+</head>
+
+<body class="bg-[#F4F7FF] poppins">
+    <!-- Header Section Start -->
+   <header>
+      <!-- Navbar Section Start -->
+      <nav class="mt-5 mb-7">
+         <div class="bg-[#F4F7FF] shadow-md container mx-auto px-4 py-3 rounded-lg">
+            <div class="flex justify-between items-center">
+               <div class="flex items-center gap-5">
+                  <img src="./assets/images/logo.png" alt="Logo" class="w-12 h-12">
+                  <h1 class="text-black text-3xl font-normal">Dev<span class="text-black font-bold">Board</span></h1>
+               </div>
+               <div class="pb-5">
+                  <a href="index.html"><button  class="px-5 py-3 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 
+                     shadow-2xl text-white rounded-lg mx-auto block mt-6 transition-all duration-300">
+                     Back to Desk
+                  </button></a>
+               </div>
+
+            </div>
+         </div>
+      </nav>
+      <!-- Navbar Section End --> 
+   </header>
+   <!-- Header Section End -->
+
+   <!-- Main Section Start -->
+   <main>
+      <section class="container mx-auto py-5 mb-16">
+         <div class="flex flex-col gap-8">
+            <div class=" bg-white shadow-2xl rounded-lg pt-5 pb-10 text-black ">
+               <div class="">
+                  <h3 class="text-2xl font-bold px-4">Question-1: What are the different ways to select an element in the DOM?</h3>
+                  <div class="border-b-2 border-dotted border-b-slate-400 my-4 "></div>
+                  <p class="text-md font-normal px-4">DOM-এ এলিমেন্ট সিলেক্ট করার জন্য অনেক উপায় আছে। getElementById() মেথডটি দিয়ে নির্দিষ্ট এলিমেন্ট সিলেক্ট করা যায়, কারণ প্রতিটি আইডি ইউনিক হতে হয়। getElementsByClassName() ক্লাসের নাম দিয়ে একাধিক এলিমেন্ট সিলেক্ট করে, আর getElementsByTagName() ট্যাগের নাম দিয়ে সিলেক্ট করে। যদি CSS সিলেক্টরের মতো করে এলিমেন্ট সিলেক্ট করতে হয়, তাহলে querySelector() এবং querySelectorAll() ব্যবহার করা হয়। querySelector() প্রথম মিলে এমন একটি এলিমেন্ট দেয়, আর querySelectorAll() সব মেলে এমন এলিমেন্টগুলোর একটি NodeList দেয়, যা স্ট্যাটিক কালেকশন। এছাড়া, getElementsByName() মেথডটি name অ্যাট্রিবিউট দিয়ে একাধিক এলিমেন্ট সিলেক্ট করে। পরিস্থিতি ও দরকার অনুযায়ী এসব পদ্ধতি ব্যবহার করা হয়।</p>
+               </div>
+            
+            </div>
+            
+            
+            <div class=" bg-white shadow-2xl rounded-lg pt-5 pb-10 text-black">
+               <div class="">
+                  <h3 class="text-2xl font-bold px-4">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                  <div class="border-b-2 border-dotted border-b-slate-400 my-4 "></div>
+                  <p class="text-md font-normal px-4">DOM-এ এলিমেন্টের ভেতরের কনটেন্ট দেখার বা পরিবর্তন করার জন্য innerHTML, innerText, এবং textContent ব্যবহৃত হয়, তবে এদের মধ্যে কিছু পার্থক্য রয়েছে। innerHTML এলিমেন্টের ভেতরের HTML কোডসহ সবকিছু রিটার্ন করে বা সেট করে, যার মধ্যে ট্যাগ এবং অ্যাট্রিবিউটও থাকে, কিন্তু এটি নিরাপত্তা ঝুঁকির কারণ হতে পারে। innerText শুধুমাত্র দৃশ্যমান টেক্সট রিটার্ন করে বা সেট করে, মানে ব্রাউজারে যে টেক্সট দেখা যায়, কিন্তু হিডেন টেক্সট বাদ দেয়। অন্যদিকে, textContent এলিমেন্টের সব টেক্সট রিটার্ন করে বা সেট করে, এমনকি হিডেন টেক্সটও, তবে HTML ট্যাগ বাদ দিয়ে শুধু টেক্সট দেয়। পরিস্থিতি অনুযায়ী উপযুক্ত প্রপার্টি বেছে নেওয়া হয়, যেমন ডাইনামিক HTML তৈরি করতে innerHTML, দৃশ্যমান টেক্সট পেতে innerText, এবং দ্রুত সব টেক্সট পেতে textContent ব্যবহার করা হয়।
+                  </p>
+               </div>
+            
+            </div>
+            
+            
+            <div class=" bg-white shadow-2xl rounded-lg pt-5 pb-10 text-black">
+               <div class="">
+                  <h3 class="text-2xl font-bold px-4">Question-3: What is event delegation in the DOM?</h3>
+                  <div class="border-b-2 border-dotted border-b-slate-400 my-4 "></div>
+                  <p class="text-md font-normal px-4">ইভেন্ট ডেলিগেশন  হল একটি টেকনিক যা ডমে ইভেন্ট হ্যান্ডলার সংযুক্ত করার একটি কার্যকর পদ্ধতি। এর মাধ্যমে, আমরা প্যারেন্ট এলিমেন্টে ইভেন্ট হ্যান্ডলার অ্যাটাচ করি এবং তার পরে সেই প্যারেন্ট এলিমেন্টের মধ্যের চাইল্ড এলিমেন্টগুলোর উপর ইভেন্টগুলি ট্রিগার করতে পারি। এর সুবিধা হল, যদি আমরা অনেকগুলো এলিমেন্টে একই ধরনের ইভেন্ট হ্যান্ডলার অ্যাটাচ করতে চাই, তবে প্রতিটি এলিমেন্টে আলাদা করে হ্যান্ডলার অ্যাটাচ করার বদলে, আমরা একবার প্যারেন্টে হ্যান্ডলার অ্যাটাচ করে সেই প্যারেন্টের মধ্যে নতুন এলিমেন্ট যোগ হলেও ইভেন্টগুলি কাজ করাতে পারি।</p>
+               </div>
+            
+            </div>
+   
+   
+            <div class=" bg-white shadow-2xl rounded-lg pt-5 pb-10 text-black">
+               <div class="">
+                  <h3 class="text-2xl font-bold px-4">Question-4: What is event bubbling in the DOM?</h3>
+                  <div class="border-b-2 border-dotted border-b-slate-400 my-4 "></div>
+                  <p class="text-md font-normal px-4">ইভেন্ট বাবলিং হল DOM ইভেন্টগুলির একটি আচরণ যেখানে একটি ইভেন্ট যখন কোনও এলিমেন্টে ঘটে, তখন এটি প্রথমে সেই এলিমেন্টে ট্রিগার হয় এবং তারপর ধীরে ধীরে তার প্যারেন্ট এলিমেন্টগুলোতে প্রপাগেট হয় (বাবলিং হয়), একে একে উপরের দিকে উঠে যায় যতক্ষণ না এটি ডকুমেন্টের রুট এলিমেন্ট (document) পর্যন্ত পৌঁছায়।</p>
+               </div>
+            
+            </div>
+   
+   
+            <div class=" bg-white shadow-2xl rounded-lg pt-5 pb-10 text-black">
+               <div class="">
+                  <h3 class="text-2xl font-bold px-4">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                  <div class="border-b-2 border-dotted border-b-slate-400 my-4 "></div>
+                  <p class="text-md font-normal px-4">JavaScript-এ DOM এ নতুন এলিমেন্ট তৈরি, যোগ এবং মুছে ফেলা খুব সহজ। নতুন এলিমেন্ট তৈরি করতে document.createElement() মেথড ব্যবহার করা হয়। তারপর, তৈরি করা এলিমেন্টটি পেজে যোগ করতে appendChild() অথবা insertBefore() ব্যবহার করা হয়। উদাহরণস্বরূপ, একটি নতুন এলিমেন্ট তৈরি করে তাকে একটি বিদ্যমান প্যারেন্ট এলিমেন্টের মধ্যে appendChild() দিয়ে যোগ করা হয়। এলিমেন্ট মুছে ফেলতে removeChild() মেথড ব্যবহার করা হয়, যেখানে প্যারেন্ট এলিমেন্টের মধ্যে থাকা নির্দিষ্ট এলিমেন্টটি মুছে ফেলা হয়। এই তিনটি পদ্ধতির মাধ্যমে JavaScript দিয়ে  DOM-এর মধ্যে এলিমেন্টের কন্টেন্ট পরিচালনা করতে পারি।
+                  </p>
+               </div>
+            
+            </div>
+         </div>
+      
+      </section>
+   </main>
+   <!-- Main Section End -->
+</body>
+
+</html>
